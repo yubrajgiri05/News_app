@@ -18,7 +18,7 @@ const NewsBoard = ({category}) => {
       <h2 className="text-center py-4">Latest <span className="badge bg-danger">News</span> </h2>
     <div className=" container">
       <div className="row g-5 pb-5">
-        {articles.map((news,index)=>{
+        {articles?.map((news,index)=>{
         return( <>
         <NewsItem key={index} title={news.title} description={news.description} src={news.urlToImage} url={news.url} author={news.author} publishedAt={news.publishedAt}/></> 
       )})}
