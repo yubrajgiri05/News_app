@@ -5,6 +5,7 @@ import NewsItem from "./NewsItem";
 
 const NewsBoard = ({category}) => {
   const [articles, setArticles] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchNews = async () => {
